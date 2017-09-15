@@ -1,6 +1,6 @@
 function add(numbers) {
-  if (numbers.includes(',')) {
-    var numberArray = numbers.split(',').map(numberStr => parseInt(numberStr));
+  if (numbers.match(/[,\n]/g)) {
+    var numberArray = numbers.split(/[,\n]/g).map(numberStr => parseInt(numberStr));
     return numberArray.reduce(function(accumulator, currentValue) {
       return accumulator + parseInt(currentValue);
     });

@@ -35,3 +35,11 @@ test('returns 108 on passing 4,8,15,16,23,42', () => {
 test('returns 768 on passing 2,19,39,54,20,49,192,393', () => {
   expect(add('2,19,39,54,20,49,192,393')).toBe(768);
 });
+
+test('returns 3 on passing 1\n2', () => {
+  expect(add('1\n2')).toBe(3);
+});
+
+test('returns 5 on passing 2\n3', () => {
+  expect(add('2\n3')).toBe(5);
+});
