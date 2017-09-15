@@ -19,3 +19,7 @@ test('returns 3 on passing 3', () => {
 test('returns 9 on passing 4,5', () => {
   expect(add('4,5')).toBe(9);
 });
+
+test('returns 0 on passing 0', () => {
+  expect(add('0')).toBe(0);
+});
