@@ -43,3 +43,7 @@ test('returns 3 on passing 1\n2', () => {
 test('returns 5 on passing 2\n3', () => {
   expect(add('2\n3')).toBe(5);
 });
+
+test('returns 5 on passing //;\n1;2', () => {
+  expect(add('//;\n1;2')).toBe(3);
+});
