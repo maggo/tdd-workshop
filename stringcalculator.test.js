@@ -15,3 +15,7 @@ test('returns 3 on passing 1,2', () => {
 test('returns 3 on passing 3', () => {
   expect(add('3')).toBe(3);
 });
+
+test('returns 9 on passing 4,5', () => {
+  expect(add('4,5')).toBe(9);
+});
